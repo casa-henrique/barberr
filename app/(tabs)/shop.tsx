@@ -1,8 +1,21 @@
 import { StyleSheet } from "react-native";
 
-import BrandInfos from "../../barber.config.json";
 import EditScreenInfo from "../../components/EditScreenInfo";
 import { Text, View } from "../../components/Themed";
+
+export default function TabTwoScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Loja</Text>
+      <View
+        style={styles.separator}
+        lightColor="#eee"
+        darkColor="rgba(255,255,255,0.1)"
+      />
+      <EditScreenInfo path="app/(tabs)/two.tsx" />
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -20,17 +33,3 @@ const styles = StyleSheet.create({
     width: "80%",
   },
 });
-
-export default function TabOneScreen() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{BrandInfos.name}</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
-  );
-}
