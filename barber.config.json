@@ -1,26 +1,48 @@
 {
-  "name": "Jao Barber",
+  "name": "Barber",
   "Employers": 4,
   "EmployerNames": [
     {
       "name": "Felipe",
       "especialidade": "Corte social",
-      "image": ""
+      "image": "https://www.institutowalcosta.com.br/wp-content/uploads/2021/09/barbeiro-saiba-tudo-sobre-essa-profissao-1024x683.jpg"
     },
     {
       "name": "Gustavo",
       "especialidade": "Navalhado",
-      "image": ""
+      "image": "https://img.freepik.com/fotos-gratis/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia_1303-20861.jpg"
     },
     {
       "name": "Fernando",
       "especialidade": "Barba",
-      "image": ""
+      "image": "https://img.freepik.com/fotos-premium/corte-de-cabelo-masculino-cabeleireiro-barbearia-corte-de-cabelo-profissional_627545-304.jpg"
     },
     {
       "name": "Cleber",
       "especialidade": "Colorimetria",
-      "image": ""
+      "image": "https://img.freepik.com/fotos-gratis/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia_1303-20772.jpg"
+    }
+  ],
+  "services": [
+    {
+      "name": "Navalha",
+      "valor": 40,
+      "image": "https://img.freepik.com/fotos-premium/navalha-processo-de-corte-de-cabelo-de-jovem-loiro-em-salao-de-barbearia-conceito-de-barbearia-para-homens-e-meninos_170532-4259.jpg"
+    },
+    {
+      "name": "Barba",
+      "valor": 25,
+      "image": "https://img.freepik.com/fotos-premium/cabeleireiro-fazendo-corte-de-cabelo-de-barba-com-pente-e-tesoura_1153-9479.jpg"
+    },
+    {
+      "name": "Barba + Cabelo",
+      "valor": 30,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZAwd71962Kdr3EuWJb-DN1SW0mP48xN81Oykb7uS7oI7S00HDtHmcI82R-GqH1d-1J4&usqp=CAU"
+    },
+    {
+      "name": "Sobrancelha",
+      "valor": 20,
+      "image": "https://blog.vonbarbarov.com.br/wp-content/uploads/2021/02/Sobrancelha-Masculina-Barbarov.png"
     }
   ]
 }
