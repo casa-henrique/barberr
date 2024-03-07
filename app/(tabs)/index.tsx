@@ -137,9 +137,7 @@ export default function TabOneScreen() {
         contentContainerStyle={{
           flexGrow: 1,
           justifyContent: "center",
-          width: "100%",
-          paddingLeft: 800,
-          paddingHorizontal: 80,
+          paddingHorizontal: 10,
         }}
       >
         {BrandInfos.EmployerNames.map((item, i) => {
@@ -186,9 +184,7 @@ export default function TabOneScreen() {
         contentContainerStyle={{
           flexGrow: 1,
           justifyContent: "center",
-          width: "100%",
-          paddingLeft: 800,
-          paddingHorizontal: 80,
+          paddingHorizontal: 10,
         }}
       >
         {BrandInfos.services.map((item, i) => {

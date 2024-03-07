@@ -15,6 +15,7 @@ import { Text, View } from "../components/Themed";
 export default function ModalScreen() {
   const [name, setName] = useState("");
   const [value, setValue] = useState("");
+  const [desc, setDesc] = useState("");
   const [file, setFile] = useState<any>(null);
 
   const pickImage = async () => {
@@ -37,7 +38,7 @@ export default function ModalScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Cadastrar Serviço</Text>
 
-      <View style={{ display: "flex", marginTop: 30, width: "80%", gap: 30 }}>
+      <View style={{ display: "flex", marginTop: 20, width: "80%", gap: 20 }}>
         <View style={{ display: "flex", width: "100%", gap: 10 }}>
           <Text>Nome</Text>
           <TextInput
@@ -70,6 +71,21 @@ export default function ModalScreen() {
           />
         </View>
         <View style={{ display: "flex", width: "100%", gap: 10 }}>
+          <Text>Descrição</Text>
+          <TextInput
+            onChange={(e: any) => setDesc(e.target.value)}
+            multiline
+            style={{
+              backgroundColor: "white",
+              borderStyle: "solid",
+              borderColor: "#4A6CB5",
+              borderWidth: 2,
+              borderRadius: 4,
+              padding: 5,
+            }}
+          />
+        </View>
+        <View style={{ display: "flex", width: "100%", gap: 10 }}>
           <Text>imagem</Text>
           <TouchableOpacity
             onPress={() => pickImage()}
@@ -95,13 +111,13 @@ export default function ModalScreen() {
           justifyContent: "center",
           backgroundColor: "#19B674",
           position: "absolute",
-          bottom: 50,
+          bottom: 20,
           width: "60%",
           height: 40,
           borderRadius: 12,
         }}
       >
-        <Text style={{ color: "white" }}>Adicionar</Text>
+        <Text style={{ color: "white", fontWeight: "bold" }}>Adicionar</Text>
       </TouchableOpacity>
 
       <StatusBar style={Platform.OS === "ios" ? "light" : "auto"} />
@@ -113,15 +129,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
   },
   title: {
     fontSize: 20,
     fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+    marginTop: 30,
   },
 });
